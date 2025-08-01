@@ -5,32 +5,118 @@
     "width" : 30,
     "height" : 20,
     },
-  "modules": [
-    "title",
-    "separator",
-    "os",
-    "host",
-    "kernel",
-    "shell",
-    "terminal",
-    "TerminalFont",
-    "Chassis",
-    "Media",
-    "Gamepad", 
-    "uptime",
-    "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days",
-    "packages",
-    "wm",
-    "WMTheme",
-    "de",
-    "cpu",
-    "gpu",
-    "memory",
-    "swap",
-    "disk",
-    "inisystem",
-    "battery",
-    "processes",
-    "colors"
-  ]
+        "display":
+        {
+        "separator": " "
+        },
+    "modules": [
+        "break",
+        {
+            "type": "title",
+            "keyWidth": 10,
+        },
+        {
+            "type":"host",
+            "key": "󰍹 Host:",
+            "keyColor" : "magenta"
+        },
+        {
+            "type": "os",
+            "key": " OS:",
+            "keyColor": "magenta",
+        },
+        {
+            "type": "kernel",
+            "key": " Kernel:",
+            "keyColor": "blue",
+        },
+        {
+            "type": "packages",
+            "key": " Packages:",
+            "keyColor": "light_blue",
+        },
+        {
+            "type": "shell",
+            "key": " Shell:",
+            "keyColor": "green",
+        },
+        {
+            "type": "terminal",
+            "key": " Terminal:",
+            "keyColor": "yellow",
+        },
+        {
+            "type": "wm",
+            "key": " Window Manager:",
+            "keyColor": "38;2;252;148;3",
+        },
+        {
+            "type": "wmTheme",
+            "key": " Window Manager Theme:",
+            "keyColor": "38;2;252;148;3",
+        },
+        {
+            "type": "de",
+            "key": " Desktop Environnement:",
+            "keyColor": "38;2;252;148;3",
+        },
+        {
+            "type": "cursor",
+            "key": "󰇀Cursor:",
+            "keyColor": "red",
+        },
+        {
+            "type": "terminalfont",
+            "key": " Terminal Font:",
+            "keyColor": "magenta",
+        },
+        {
+            "type": "uptime",
+            "key": " Uptime:",
+            "keyColor": "blue",
+        },
+        {
+            "type": "media",
+            "key": "󰝚 Media:",
+            "keyColor": "light_blue",
+        },
+        {
+           "type": "cpu",
+           "key" : " CPU:",
+           "keyColor" : "green"
+        },
+        {
+           "type": "gpu",
+           "key" : "󰢮 GPU:",
+           "keyColor" : "yellow"
+        },
+        {
+            "type": "memory",
+            "key": " RAM:",
+            "keyColor": "38;2;252;148;3"
+        },
+        {
+            "type": "swap",
+            "key": " Swap:",
+            "keyColor": "38;2;252;148;3"
+        },
+        {
+           "type": "disk",
+           "key": " Disk:",
+           "keyColor": "red"
+        },
+        {
+          "type" :"battery",
+          "key": " Battery:",
+          "keyColor": "magenta"
+        },
+        {
+         "type" : "processes",
+         "key": " Processes:",
+         "keyColor": "magenta"
+        },
+        "monitor",
+        "colors",
+        "break"
+    ]
 }
