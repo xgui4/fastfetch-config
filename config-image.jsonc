@@ -51,8 +51,8 @@
             "keyColor": "38;2;252;148;3",
         },
         {
-            "type": "wmTheme",
-            "key": " Window Manager Theme:",
+            "type": "Theme",
+            "key":"󱠓Themes:",
             "keyColor": "38;2;252;148;3",
         },
         {
